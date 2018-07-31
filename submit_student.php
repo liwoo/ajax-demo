@@ -1,8 +1,7 @@
 <?php
   $name = $_POST['name'];
-  $classroom = $_POST['class'];
-  if (isset($name) && isset($classroom)) {
-      echo $name;
-      echo '<br />';
-      echo $classroom;
+  $class = $_POST['class'];
+
+  if (isset($name) && isset($class)) {
+      echo json_encode(['name' => $name, 'class' => $class]);
   }
